@@ -1,0 +1,21 @@
+Original File:             POC_2_roughwork.ipynb
+
+Lacked: 1. Simplicity and organisation. It is cluttered. Literally a rough work with different codes and ideas spread everywhere.
+        2. Survey content language barrier, i.e, for languages other than English, the classifier will have a hard time understanding it.
+        3. Language might not be a problem for the Generated Pretrained Transformer, might be though.
+        4. Primary problem: Correct Classification using combined numerical and textual features.
+        5. Secondary problem: Sending the predictions/resultant output from the combined classifier to the GenAI model for detailed generated feedback.
+        6. Langdetect Googletrans was added but had to be removed due to "httpx version mismatch" error when openai is pip installed and imported.
+        7. 
+
+
+Modified File (1):         POC_2_Survey_Feedback_Analysis_workingnote.ipynb
+
+Added:  1. Pipelines to tackle the primary problem.
+        2. Calculation of probabilities and sending them to GenAI model to tackle the secondary problem.
+        3. OpenAI caused problems while importing, so changed it ot GroqCloud API which is based on "llama3-8b-8192" rather than "gpt-3.5 Turbo" or "gpt-4o".
+        4.Langdetect Googletrans Translator to override survey content language barrier, i.e, for languages other than English [implemented but not tested, i.e. commented out].
+        5. De-cluttered notebook with appropriate data pre-processing and only the necessary portions.
+
+Lacked: 1. Simplicity due to being a Notebook file.
+        2. User input interface.
