@@ -20,23 +20,23 @@ This project aims to classify survey feedbacks into two categories: positive and
 When a company analyzes surveys for of productivity, it aims to distinguish between employees that contribute positively to work-related tasks and those that do not. Here’s why such classification is needed:
 
 ### 1. Quality Improvement:
-__Insight into Employee Performance__: Customer feedback provides valuable insights into how employees interact with customers. It highlights areas where employees excel and areas needing improvement.
+__Insight into Employee Performance__: Customer feedback provides valuable insights into how employees interact with customers. It highlights areas where employees excel and areas needing improvement.  
 __Identify Training Needs__: By analyzing feedback, you can identify specific training needs for employees. For instance, if customers consistently mention issues related to product knowledge, additional training sessions can address this gap.
 
 ### 2. Customer Satisfaction and Retention:
-__Enhance Customer Experience__: Positive interactions lead to higher customer satisfaction. Analyzing feedback helps you understand what contributes to positive experiences.
+__Enhance Customer Experience__: Positive interactions lead to higher customer satisfaction. Analyzing feedback helps you understand what contributes to positive experiences.  
 __Address Pain Points__: Negative feedback points out pain points in customer interactions. Addressing these issues can prevent customer churn and improve retention.
 
 ### 3. Employee Engagement and Morale:
-__Recognize and Appreciate Employees__: Positive feedback allows you to recognize and appreciate employees who consistently provide excellent service. This boosts morale and engagement.
+__Recognize and Appreciate Employees__: Positive feedback allows you to recognize and appreciate employees who consistently provide excellent service. This boosts morale and engagement.  
 __Address Employee Concerns__: Negative feedback may highlight employee dissatisfaction or challenges. Addressing these concerns improves overall employee well-being.
 
 ### 4. Business Reputation and Brand Image:
-__Word of Mouth__: Satisfied customers share positive experiences, contributing to positive word-of-mouth marketing.
+__Word of Mouth__: Satisfied customers share positive experiences, contributing to positive word-of-mouth marketing.  
 __Mitigate Negative Impact__: Addressing negative feedback promptly helps mitigate any damage to your brand reputation.
 
 ### 5. Data-Driven Decision Making::
-__Quantitative Metrics__: Metrics like Net Promoter Score (NPS), Customer Satisfaction Score (CSAT), and Customer Effort Score (CES) provide quantifiable data for decision-making.
+__Quantitative Metrics__: Metrics like Net Promoter Score (NPS), Customer Satisfaction Score (CSAT), and Customer Effort Score (CES) provide quantifiable data for decision-making.  
 __Prioritize Actions__: Analyzing feedback helps prioritize actions based on impact and urgency.
 
 In summary, analyzing customer feedback on employee interactions is essential for continuous improvement, customer satisfaction, employee engagement, and maintaining a positive brand image.
