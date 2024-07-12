@@ -19,3 +19,11 @@ Added:  1. Pipelines to tackle the primary problem.
 
 Lacked: 1. Simplicity due to being a Notebook file.
         2. User input interface.
+
+Modified File (2):         POC_2_main( ).ipynb // poc_2_main(_).py
+
+Added:  1. Self-created functions, which allowed me to break down my code into smaller, manageable pieces, promoting code organization, reusability, and modularity.
+        2. Both the Notebook(.ipynb) and the Python(.py) files are in main( ) function format.
+        3. Slight changes in predict_feedback_proba( ) where the sample is in series, so we had to convert it into dataframe.
+
+TO USE MY CODE, YOU CAN JUST CHANGE THE DATA PREPROCESSING prepare_data( ) & COLUMN NAMES TO SUIT YOUR OWN SURVEY FILE, OTHERWISE EVERYTHING WILL REMAIN SAME.  
