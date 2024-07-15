@@ -88,11 +88,19 @@ An accuracy of 1.0 indicates that the model perfectly predicts the test data.
 The precision, recall, and F1-score are also 1.0 for both classes, suggesting excellent performance.  
 
 ## Feedback Generation
-First and foremost, define a function to return both the positive and negative predicted probability of the survey data.
-
+First and foremost, define a function _def predict_feedback_proba()_ to return both the positive and negative predicted probability of the survey data.  
+The positive and negative predict probability of the survey data from the classifier is to influence the generated feedback from the GenAI model.
+I leveraged an API Key from GroqCloud, which is based on the model "llama3-8b-8192", but you can use OpenAI provided that there might be some compatibility issue with "httpx" version being outdated.
+Define a function def _generate_detailed_feedback()_ which will take in numerical & textual data and both the probabilities as input paramaters and return a generated chat feedback for the same.
+Give appropriate prompt for your chat completion.
 
 ## Conclusion
-
+In this project, we’ve explored survey data related to employee productivity, aiming to distinguish between positive contributors and those who are not. Here’s how this work can have real-world influence:  
+__Employee Productivity Insights__:  
+By analyzing survey responses, organizations can identify patterns and gain insights into employee productivity.  
+Understanding which factors contribute positively or negatively allows companies to make informed decisions, improve work environments, and enhance overall performance.  
+* Logistic Regression: It is a powerful classification algorithm commonly used in machine learning. It models the probability of a binary outcome (e.g., positive/negative sentiment, spam/not spam) based on input features. In our project, we leveraged Logistic Regression to classify survey responses, achieving excellent accuracy.  
+* Generative AI (Gen AI): Generative AI models, like the one I used for feedback generation, creates new content based on existing data. Gen AI can be harnessed for various tasks, including text generation, image synthesis, and creative writing. In our case, we used Gen AI to generate chat feedback based on both numerical and textual data.
 
 
 ---
