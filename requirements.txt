@@ -1,0 +1,59 @@
+POC_2				FORM layout
+
+-------------pg 1--------------
+Timestamp:					7/10/2024 17:07:51
+Client Name:					Bruce Wayne
+Client Email:					iambatman@gotham.com
+
+-------------pg 2--------------
+Question 1 :					4
+Question 2 :					2
+.
+Question n :					3
+Overall feedback on Quality Management:  	*text data*
+-------------pg 3---------------
+Question 1 :					4
+Question 2 :					2
+.
+Question n :					3
+Overall feedback on Quality Assurance:		*text data*
+------------pg 4-----------------
+Question 1 :					4
+Question 2 :					2
+.
+Question n :					3
+Overall feedback on Product Quality:		*text data*
+------------pg 5------------------
+Question 1 :					4
+Question 2 :					2
+.
+Question n :					3
+Overall feedback on Delivery Time:		*text data*
+-----------pg 6--------------------
+Question 1 :					4
+Question 2 :					2
+.
+Question n :					3
+Overall feedback on Communication & Service: 	*text data*
+----------- submit----------------
+
+
+Points to remember while creating the form and spreadsheet:
+
+* In the spreadsheet, column names should be the same as respective questions from the form.
+
+* You need an extra column in the spreadsheet for the training of classifier model
+Extra column:	Final Label: 	Positive/Negative [only in spreadsheets used for training model]
+Just use some sample surveys as training inputs with 'Final Label' column in the spreadsheet.
+
+* No need for the extra column for output. Optimization has been done accordingly.
+
+* Textual columns in the spreadsheets must have "Overall feedback ...." in them, i have normalized it to collect text data from columns wherever "Overall feedback..." is found. [case-sensitive]
+
+* Keep the rating standard same. Doesn't matter if it is out of 5 or out of 10, just keep it uniform/same through out the form. Optimization has been done accordingly.
+
+* I have set up the output in such a way that the output will be placed into their respective client's row, and also will be printed in the output console. If you don't want that, comment the print line.
+
+* Prompt has been given for detailed feedback generation. You may further modify it to suit your need.
+
+
