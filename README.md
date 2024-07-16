@@ -51,7 +51,7 @@ Sample dataset used:
 Read the [repo_logs](https://github.com/sarkar-sayan/Feedback_Analysis-using-Machine_Learning_NLP_GenerativeAI/blob/main/repo_logs) file first for better understanding.
 ##### 1. Data Cleaning:
 First and foremost, basic EDA to drop unnecessary rows and columns and remove null values etc. Process differs according to different survey data.
-##### 2. preprocess_text(text):
+##### 2. ```preprocess_text(text)```:
 This function preprocesses text by:  
 Converting it to lowercase.  
 Removing punctuation.  
