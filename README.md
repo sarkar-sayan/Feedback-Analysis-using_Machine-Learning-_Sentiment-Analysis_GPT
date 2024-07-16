@@ -58,7 +58,7 @@ Removing punctuation.
 Splitting it into tokens (words).  
 Filtering out stop words (common words like “the,” “and,” etc.).  
 The cleaned text is returned.  
-##### 3. translate_text_if_needed(text):
+##### 3. ```translate_text_if_needed(text)```:
 If the input text is not in English, this function attempts to translate it to English using the detect and translator libraries.  
 If translation fails or the text is already in English, it returns the original text.  
 
@@ -70,28 +70,28 @@ The training set (X_train, y_train) will be used to train the model, and the tes
 I've set a test size of 20% and a random seed for reproducibility.  
 #### 2. Model:
 Classifier used: __Logistic Regression__
-* Define ColumnTransformer to separate numerical and text data processing.
-* Use StandardScaler to scale the numerical data.
-* Use Tf-IDf Vectorizer to tokenize the textual data.
-Define a pipeline of both the ColumnTransformer and LogisticRegression.
+* Define ```ColumnTransformer``` to separate numerical and text data processing.
+* Use ```StandardScaler``` to scale the numerical data.
+* Use ```Tf-IDf Vectorizer``` to tokenize the textual data.
+Define a pipeline of both the ```ColumnTransformer``` and ```LogisticRegression```.
 This pipeline will be our combined classifier for this data.
 #### 3. Model Training:
-I've chosen the LogisticRegression classifier for my model. //RandomForestClassifier is supposed to work but gives bad results//   
+I've chosen the ```LogisticRegression``` classifier for my model. //RandomForestClassifier is supposed to work but gives bad results//   
 The model is trained using the training data (X_train, y_train).  
 
 ## Evaluation
-I’ve made predictions on the test set using model.predict(X_test).  
-The accuracy of the model is calculated using accuracy_score(y_test, y_pred).  
+I’ve made predictions on the test set using ```model.predict(X_test)```.  
+The accuracy of the model is calculated using ```accuracy_score(y_test, y_pred)```.  
 The printed output shows the accuracy, precision, recall, F1-score, and support for each class (positive and negative).  
 #### Interpretation:
 An accuracy of 1.0 indicates that the model perfectly predicts the test data.  
 The precision, recall, and F1-score are also 1.0 for both classes, suggesting excellent performance.  
 
 ## Feedback Generation
-First and foremost, define a function _def predict_feedback_proba()_ to return both the positive and negative predicted probability of the survey data.  
+First and foremost, define a function ```def predict_feedback_proba()``` to return both the positive and negative predicted probability of the survey data.  
 The positive and negative predict probability of the survey data from the classifier is to influence the generated feedback from the GenAI model.
-I leveraged an API Key from GroqCloud, which is based on the model "llama3-8b-8192", but you can use OpenAI provided that there might be some compatibility issue with "httpx" version being outdated.
-Define a function def _generate_detailed_feedback()_ which will take in numerical & textual data and both the probabilities as input paramaters and return a generated chat feedback for the same.
+I leveraged an API Key from ```GroqCloud```, which is based on the model ```"llama3-8b-8192"```, but you can use OpenAI provided that there might be some compatibility issue with "httpx" version being outdated.
+Define a function ```def generate_detailed_feedback()``` which will take in numerical & textual data and both the probabilities as input paramaters and return a generated chat feedback for the same.
 Give appropriate prompt for your chat completion.
 
 ## Conclusion
