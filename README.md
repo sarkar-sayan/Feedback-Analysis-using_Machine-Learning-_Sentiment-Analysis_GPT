@@ -1,5 +1,5 @@
 # Feedback-Analysis-using-Machine-Learning_NLP_GenerativeAI
-Analysis of any survey feedback data from client and classifying it into Positive/Negative while determining which Negative feedback has greater importance.
+Analysis of any survey feedback data obtained from client or customer and classifying it into Positive/Negative while determining which Negative feedback has greater importance.
 Also generating a detailed feedback on the output with Employee's performance in focus and on the matters to improve. 
 
 # Survey Feedback Analysis : Positive or Negative
